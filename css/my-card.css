@@ -1,0 +1,21 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.but {
+    padding: 5px;
+    width: 80px;
+    margin: 1px;
+    border: none;
+}
+
+.post,
+input {
+    /* width: 450px; */
+}
+
+.text textarea {
+    /* width: 450px; */
+}

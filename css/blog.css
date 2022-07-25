@@ -1,0 +1,19 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* .detail,
+.lorem {
+    width: 800px;
+} */
+
+.body h1 {
+    text-align: center;
+}
+
+.lorem {
+    margin: 10px 136px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/my-card.css">
+    <title>Post-Card</title>
+</head>
+
+<body>
+    <div class="top-section mt-5">
+        <div class="container">
+            <h1>Posts page</h1>
+            <div class="row">
+                <div class="col-md-5">
+                    <form action="" id="form-page">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Post Title</label>
+                            <input type="text" class="form-control" id="title-post" placeholder="enter a title">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Post Body</label>
+                            <textarea class="form-control" id="body-post" rows="3"></textarea>
+                        </div>
+                        <div class="d-flex">
+                            <button class="btn btn-primary" value="submit">Create Post</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-section mt-5">
+        <div class="container">
+            <div class="row" id="post-holder">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <p></p>
+                            <h6 id="post-title">post title</h6>
+                            <p id="post-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo cupiditate laborum, soluta debitis iure dolore iusto adipisci optio ipsam, sint amet dolorem possimus voluptatum. Voluptate cumque possimus autem alias maiores.</p>
+                            <div class="d-flex justify-content-between">
+                                <button class="btn btn-success">View</button>
+                                <button class="btn btn-primary">Update</button>
+                                <button class="btn btn-danger">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="js/my-card.js"></script>
+</body>
+
+</html>
