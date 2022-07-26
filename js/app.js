@@ -1,12 +1,23 @@
-function renderSingle() {
-    let newObject = localStorage.getItem('viewedPost')
-    console.log(newObject);
-    let post = JSON.parse(newObject)
-    console.log(post)
-        // console.log(post.title)
-    document.getElementById('post-id').innerHTML = post.id
-    document.getElementById('post-title').innerHTML = post.title
-    document.getElementById('post-body').innerHTML = post.body
+let layOut = document.querySelector('.single-card');
+let url = 'https://jsonplaceholder.typicode.com/posts';
+
+
+let singleLady = localStorage.getItem('.singleton');
+console.log(singleLady);
+
+let postTitle = document.querySelector('.post-title');
+let postBody = document.querySelector('.post-body');
+
+function singleMan(id) {
+    let singleMan = url + '/' + id;
+    fetch(singleMan)
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data);
+            postTitle.innerHTML = data.title;
+            postBody.innerHTML = data.body;
+        });
 }
 
-renderSingle();
+
+singleMan(singleLady);
