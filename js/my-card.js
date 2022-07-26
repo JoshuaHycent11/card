@@ -22,6 +22,7 @@ function getPosts() {
 getPosts();
 
 
+
 function createPost(e) {
     e.preventDefault();
     console.log('title-post', titleForm.value);
@@ -111,16 +112,7 @@ function updatePost(id) {
         });
 }
 
-function openSingle(id) {
-    fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
-        .then((response) => response.json())
-        .then((data) => {
-            console.log(data)
-            localStorage.setItem('viewedPost', JSON.stringify(data))
-            window.location.href = 'single.html'
-                // console.log(data)
-        });
-}
+
 
 function deletePost(id) {
     fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
@@ -135,6 +127,12 @@ function deletePost(id) {
             renderUI(postBox)
         })
 
+}
+
+function openSingle(id) {
+    console.log(id)
+    localStorage.setItem('singleton', id)
+    window.location.href = 'Blog.html'
 }
 
 function renderUI(arr) {
